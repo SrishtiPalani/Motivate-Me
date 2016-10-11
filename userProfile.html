@@ -1,0 +1,185 @@
+<!doctype html>
+<html><head>
+    <meta charset="utf-8">
+    <title>Profile: Motivate Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Le styles -->
+    <link href="Bassets/css/bootstrap.css" rel="stylesheet">
+    <link href="Bassets/css/main.css" rel="stylesheet">
+    <link href="Bassets/css/font-style.css" rel="stylesheet">
+    <link href="Bassets/css/flexslider.css" rel="stylesheet">
+    
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
+
+   
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="Bassets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="Bassets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="Bassets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="Bassets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="Bassets/ico/apple-touch-icon-57-precomposed.png">
+
+  	<!-- Google Fonts call. Font Used Open Sans & Raleway -->
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
+  	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+    $("#btn-blog-next").click(function () {
+      $('#blogCarousel').carousel('next')
+    });
+     $("#btn-blog-prev").click(function () {
+      $('#blogCarousel').carousel('prev')
+    });
+
+     $("#btn-client-next").click(function () {
+      $('#clientCarousel').carousel('next')
+    });
+     $("#btn-client-prev").click(function () {
+      $('#clientCarousel').carousel('prev')
+    });
+    
+});
+
+ $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+
+</script>
+   
+  </head>
+  <body>
+  
+  	<!-- NAVIGATION MENU -->
+
+    <div class="navbar-nav navbar-inverse navbar-fixed-top">
+        <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="homepage.html"><img src="Bassets/img/logo30.png" alt=""></a>
+        </div> 
+          </div>
+    </div>
+
+    <div class="container">
+
+	  <!-- FIRST ROW OF BLOCKS -->     
+      <div class="row">
+
+      <!-- USER PROFILE BLOCK -->
+        <div class="col-sm-3 col-lg-3">
+      		<div class="dash-unit">
+	      		<dtitle>User Profile</dtitle>
+	      		<hr>
+				<div class="thumbnail">
+					<img src="Bassets/img/face.jpg" alt="Marcel Newman" class="img-circle">
+				</div><!-- /thumbnail -->
+				<h1>Ada Lovelace </h1>
+				<h3> London, United Kingdom</h3>
+				<br>
+					<div class="info-user">
+					
+						<span aria-hidden="true" class="li_settings fs1"></span>
+						<span aria-hidden="true" class="li_mail fs1"></span>
+						<span aria-hidden="true" class="li_key fs1"></span>
+					</div>
+				</div>
+        </div>
+
+      <!-- DONUT CHART BLOCK -->
+        <div class="col-sm-3 col-lg-3">
+      		<div class="dash-unit">
+		  		<dtitle> Level Status </dtitle>
+		  		<hr>
+	        	<div id="load"></div>
+	        	<h2>45%</h2>
+			</div>
+        </div>
+
+      <!-- SECOND ROW OF BLOCKS -->     
+      <div class="row">
+        <div class="col-sm-3 col-lg-3">
+       <!-- MAIL BLOCK -->
+      		<div class="dash-unit">
+      		<dtitle>Badges Earned!</dtitle>
+      		<hr>
+      		<div class="framemail">
+    			<div class="window">
+			        <ul class="mail">
+			            <li>
+			                <i class="unread"></i>
+			                <img class="avatar" src="Bassets/img/Badges/activeUser.png" alt="avatar">
+			                <p class="sender">On a Roll</p>
+			                <p class="message"><strong>You logged in 3 days in a row!</strong></p>
+			             </li>
+			             <li>
+			                <i class="unread"></i>
+			                <img class="avatar" src="Bassets/img/Badges/focused.png" alt="avatar">
+			                <p class="sender">Focused</p>
+			                <p class="message"><strong>You completed all tasks</strong></p>
+			             </li>
+			        </div>
+		</div><!-- /dash-unit -->
+		<!-- TO DO LIST -->     
+      		<div class="half-unit">
+	      		<dtitle>To Do List</dtitle>
+	      		<hr>
+	      		<div class="cont">
+					<p><bold>7</bold> | Pending Tasks</p>
+				</div>
+		             <div class="progress">
+				        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;"><span class="sr-only">60% Complete</span>
+					        
+				        </div>
+				     </div>
+      		</div>
+    </div><!-- /span3 -->
+
+	 
+	
+	 
+ 	  
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="Bassets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="Bassets/js/lineandbars.js"></script>
+    
+	<script type="text/javascript" src="Bassets/js/dash-charts.js"></script>
+	<script type="text/javascript" src="Bassets/js/gauge.js"></script>
+	
+	<!-- NOTY JAVASCRIPT -->
+	<script type="text/javascript" src="Bassets/js/noty/jquery.noty.js"></script>
+	<script type="text/javascript" src="Bassets/js/noty/layouts/top.js"></script>
+	<script type="text/javascript" src="Bassets/js/noty/layouts/topLeft.js"></script>
+	<script type="text/javascript" src="Bassets/js/noty/layouts/topRight.js"></script>
+	<script type="text/javascript" src="Bassets/js/noty/layouts/topCenter.js"></script>
+	
+	<!-- You can add more layouts if you want -->
+	<script type="text/javascript" src="Bassets/js/noty/themes/default.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/dash-noty.js"></script> This is a Noty bubble when you init the theme-->
+	<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="Bassets/js/jquery.flexslider.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="Bassets/js/admin.js"></script>
+  
+</body></html>
